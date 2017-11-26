@@ -1,0 +1,517 @@
+/*******************************
+------    Base CSS    --------
+*******************************/
+
+/*******************************
+------   
+   Author: Riazul 
+------
+*******************************/
+
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato|Yeseva+One');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus {
+    outline: 0 solid
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Yeseva One', cursive;
+    margin: 0 0 15px;
+}
+html,
+body {
+    height: 100%
+}
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #4c4c4c
+}
+a:hover {
+    text-decoration: none
+}
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.section-padding {
+    padding: 100px 0px;
+}
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: fixed center center / cover;
+}
+.dark-bg {
+    background: #000;
+    color: #fff
+}
+
+/*******************************
+------    Header CSS    --------
+*******************************/
+
+.sticky-wrapper {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo img {
+    height: 90px;
+    width: auto;
+}
+.main-menu ul {
+    float: none;
+    text-align: right;
+}
+.main-menu .navbar-collapse .navbar-nav li {
+    display: inline-block;
+    float: none;
+    padding: 30px 0px;
+}
+.main-menu .navbar-collapse .navbar-nav {
+    padding-right: 50px;
+}
+.main-menu .navbar-collapse .navbar-nav a {
+    font-size: 21px;
+    font-family: 'Gentium Book Basic', serif;
+    color: #fff;
+}
+.main-menu .navbar-collapse .navbar-nav a:hover,
+.main-menu .navbar-collapse .navbar-nav a:focus {
+    background: none;
+}
+.main-menu .navbar-collapse .navbar-nav li {
+    position: relative;
+}
+.main-menu .navbar-collapse .navbar-nav li.active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background: #CAC7BB;
+}
+.top-social-links {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 45px;
+}
+.top-social-links a {
+    color: #d9b241;
+    padding: 0 5px;
+}
+.header-top-area,
+.logo img,
+.main-menu .navbar-nav li,
+.main-menu .navbar-nav li a,
+.top-social-links {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.is-sticky .header-top-area {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+}
+.is-sticky .logo img {
+    height: 75px;
+    width: auto;
+    padding: 10px;
+}
+.is-sticky .main-menu .navbar-nav li {
+    padding: 15px 0;
+}
+.is-sticky .main-menu .navbar-nav li a {
+    font-size: 18px;
+}
+.is-sticky .main-menu .navbar-nav li.active a {
+    color: #C8A034;
+}
+.is-sticky .top-social-links {
+    top: 28px;
+}
+
+/*******************************
+------    Slider CSS    --------
+*******************************/
+
+.welcome-carousel {
+    position: relative;
+}
+.single-slide {
+    position: relative;
+}
+.single-slide:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.header,
+.welcome-carousel,
+.welcome-carousel div {
+    height: 100%;
+}
+.slider-cell,
+.slider-cell div {
+    height: auto;
+}
+.slider-table {
+    display: table;
+    width: 100%;
+}
+.slider-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-item-1 {
+    background-image: url(img/slide-bg-1.jpg);
+}
+.single-item-2 {
+    background-image: url(img/slide-bg-2.jpg);
+}
+.single-item-3 {
+    background-image: url(img/slide-bg-3.jpg);
+}
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+.welcome-txt h2 {
+    color: #fff;
+    font-size: 90px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.welcome-txt h2:after {
+    background: url("img/white-pattern.png") no-repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 43px;
+    left: 50%;
+    margin-left: -116px;
+    position: absolute;
+    width: 234px;
+}
+.transperent-btn {
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 30px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.transperent-btn:hover {
+    color: #dab33e;
+}
+.transperent-btn:before {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.transperent-btn.white-bg-btn {
+    background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
+    border: 1px solid #fff;
+}
+
+/*******************************
+------    About CSS    --------
+*******************************/
+
+.about-area,
+.contact-area {
+    background: url("img/background-pattern.png") repeat scroll 0 0;
+}
+.author-txt {
+    padding-top: 40px;
+}
+.section-title {
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+.section-title h2 {
+    color: #cb980d;
+    font-size: 36px;
+}
+.section-title:before {
+    background: rgba(0, 0, 0, 0) url("img/golden-pattern.png") no-repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 24px;
+    left: 50%;
+    margin-left: -120px;
+    position: absolute;
+    width: 240px;
+}
+.author-img {
+    padding-top: 25px;
+    text-align: center;
+}
+
+/************************************
+------    Ingredients CSS    --------
+************************************/
+
+.ingredients-area {
+    position: relative;
+}
+.ingredients-bg {
+    background-image: url(img/ingredients-bg.jpg);
+}
+.section-title.white-txt:before {
+    background-image: url(img/white-pattern-2.png);
+}
+.section-title.white-txt h2 {
+    color: #fff;
+}
+.ingredients-txt {
+    padding: 80px 30px;
+    position: relative;
+    z-index: 1;
+}
+.ingredients-txt p {
+    color: #fff;
+}
+.ingredients-txt:before,
+.reviews:before {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.ingredients-img {
+    padding-top: 50px;
+}
+
+/************************************
+------       Menu CSS        --------
+************************************/
+
+.menu-area {
+    background: url("img/background-pattern-2.png") repeat scroll 0 0;
+}
+.menu-item {
+    margin-top: 40px;
+}
+.single-menu-item {
+    margin-top: 30px;
+}
+.single-menu-item h2 {
+    color: #cb980d;
+    font-size: 21px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.single-menu-item h2 span {
+    float: right;
+}
+.single-menu-item h2:after {
+    background: url("img/menu-border.png") repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.single-menu-item.special {
+    border: 1px solid #d9a70d;
+    padding: 5px;
+    position: relative;
+}
+.single-menu-item.special:before {
+    background: #d6b367;
+    color: #fff;
+    content: "Special";
+    display: block;
+    padding: 2px 6px;
+    position: absolute;
+    right: -1px;
+    text-align: center;
+    top: -26px;
+}
+
+/************************************
+------    Reviews CSS        --------
+************************************/
+
+.reviews-area {
+    position: relative;
+}
+.reviews-bg {
+    background-image: url(img/reviews-bg.jpg);
+}
+.reviews {
+    padding: 75px 30px;
+    position: relative;
+    z-index: 1;
+}
+.single-review {
+    color: #dde0df;
+}
+#reviews-carousel {
+    position: relative;
+}
+#reviews-carousel:before {
+    content: "\f10d";
+    left: -30px;
+    top: -10px;
+    color: #fff;
+    font-family: FontAwesome;
+    font-size: 30px;
+    position: absolute;
+}
+.single-review p {
+    font-size: 25px;
+    font-family: 'Gentium Book Basic', serif;
+    padding-bottom: 30px;
+}
+.single-review .author-name {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+/************************************
+------    Reservation CSS    --------
+************************************/
+
+.reservation-form {
+    margin-top: 20px;
+}
+.reservation-form label {
+    color: #cb980d;
+    font-size: 14px;
+}
+input[type="text"],
+select {
+    border: 1px solid #c7c5c5;
+    color: #7c7c7c;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+input[type="text"]:focus,
+select:focus {
+    border: 1px solid #c8a034;
+}
+.form-btn {
+    background: #c8a034 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 50px;
+    margin-top: 10px;
+}
+
+/************************************
+------    Footer CSS         --------
+************************************/
+
+.footer-area {
+    padding: 50px 0;
+    font-size: 14px;
+}
+.footer-widget .section-title {
+    position: relative;
+}
+.footer-widget .section-title:before {
+    background: url("img/white-pattern-3.png") no-repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 19px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    width: 200px
+}
+.footer-widget .section-title h2 {
+    font-size: 21px;
+}
+.about-widget p {
+    padding: 0 40px;
+}
+.payment-cards {
+    margin-top: 30px;
+}
+.payment-cards i {
+    margin: 0 3px;
+}
+.footer-social {
+    margin-top: 30px;
+}
+.footer-social a {
+    color: #fff;
+    margin: 0 3px;
+}
+.footer-social a:hover {
+    color: #C8A034;
+}

@@ -1,0 +1,129 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar-nav li a {
+        padding: 10px;
+    }
+    .top-social-links {
+        top: 40px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        text-align: center;
+    }
+    .logo img {
+        height: 75px;
+    }
+    .top-social-links {
+        top: 20px;
+    }
+    .is-sticky .top-social-links {
+        top: 20px;
+    }
+    .main-menu .navbar-collapse .navbar-nav a {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .main-menu .navbar-collapse .navbar-nav li {
+        padding: 12px 0;
+    }
+    .welcome-txt h2 {
+        font-size: 70px;
+        padding-top: 50px;
+    }
+    .author-food {
+        text-align: center;
+    }
+    .reservation-food-img {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .reservation-txt {
+        margin-top: 30px;
+    }
+    .about-widget p {
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 40px 0;
+    }
+    .logo img {
+        height: 65px;
+        width: auto;
+    }
+    .navbar-toggle {
+        border: 1px solid #fff;
+    }
+    .navbar-toggle .icon-bar {
+        background: #fff none repeat scroll 0 0;
+    }
+    .welcome-txt h2 {
+        font-size: 50px;
+    }
+    .transperent-btn {
+        font-size: 15px;
+        margin: 0 3px;
+        padding: 10px 15px;
+    }
+    .navbar-toggle {
+        position: absolute;
+        right: 0;
+        top: -60px;
+        z-index: 999;
+    }
+    .main-menu .navbar-collapse .navbar-nav li {
+        display: block;
+        padding: 8px;
+    }
+    .main-menu .navbar-collapse {
+        background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    }
+    .main-menu .navbar-collapse .navbar-nav {
+        padding: 0;
+        text-align: center;
+    }
+    .main-menu .navbar-collapse .navbar-nav a {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .navbar-collapse {
+        margin: 10px 0;
+    }
+    .top-social-links {
+        left: 50%;
+        margin-left: -18px;
+        top: -40px;
+        width: 100px;
+    }
+    .is-sticky .top-social-links {
+        top: -50px;
+    }
+    .main-menu .navbar-collapse .navbar-nav li.active::before {
+        left: 50%;
+        margin-left: -55px;
+        width: 110px;
+    }
+    .ingredients-txt {
+        padding: 40px 5px;
+    }
+    .single-review p {
+        font-size: 20px;
+    }
+    .reservation-food-img {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .reservation-txt {
+        margin-top: 15px;
+    }
+    .about-widget,
+    .opening-widget,
+    .location-widget {
+        margin-bottom: 30px;
+    }
+    .about-widget p {
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
